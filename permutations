@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+class solution
+{
+public:
+    int permutation(int n, int r)
+    {
+        return factorial(n) / factorial(n - r);
+    }
+    int factorial(int a)
+    {
+        int fact = 1;
+        for (int i = a; i > 1; i--)
+        {
+            fact *= i;
+        }
+        return fact;
+    }
+};
